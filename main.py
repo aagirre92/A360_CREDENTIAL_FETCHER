@@ -2,7 +2,6 @@ import argparse
 import pandas as pd
 import functions as f
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     # Get arguments from CMD
     parser = argparse.ArgumentParser(prog="A360 - Credential-Attribute csv",
@@ -28,7 +27,7 @@ if __name__ == '__main__':
         credential_id = credential["id"]
         attributes_list = credential["attributes"]  # name of attribute is located here
         for attribute in attributes_list:
-            attribute_id = attribute["id"]  # its same as credentialAttributeID!!
+            attribute_id = attribute["id"]  # It's same as credentialAttributeID!!
             attribute_name = attribute["name"]  # dataframe
             # Get attribute value
             attribute_value = f.get_attribute_values(cr_url, token, credential_id, attribute_id)
