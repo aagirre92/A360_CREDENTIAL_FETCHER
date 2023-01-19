@@ -8,6 +8,6 @@ This script allows to programmatically fetch all credential-attributes from Cont
 
 ```
 
-# ENHANCEMENTS
+# FUTURE POSSIBLE ENHANCEMENTS
 * API Key usage instead of password pending (this may be done in next release)
 * Multi-threading for the http requests
