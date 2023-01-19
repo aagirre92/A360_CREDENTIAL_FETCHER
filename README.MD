@@ -2,10 +2,6 @@
 This script allows to programmatically fetch all credential-attributes from Control Room, creating a output csv file
 **Your user must have permissions for fetching these**
 
-# LICENSE NAMES NAMING
-* Bot creator: DEVELOPMENT
-* Unattended bot runner: RUNTIME
-
 # USAGE (powershell)
 ```
 .\main.py --cr_url="https://aa1-app2019.iacc.epam.com" --username="andoni_aguirre_aranguren_creator" --password="notmypasswordyoudumb"
