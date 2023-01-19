@@ -10,3 +10,4 @@ This script allows to programmatically fetch all credential-attributes from Cont
 
 # ENHANCEMENTS
 * API Key usage instead of password pending (this may be done in next release)
+* Multi-threading for the http requests
