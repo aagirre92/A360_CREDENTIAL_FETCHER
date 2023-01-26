@@ -10,13 +10,15 @@ if __name__ == '__main__':
                                             "setup or they are fetched from external key vault")
     parser.add_argument("--cr_url", help="url of the control room (without the / at the end!) ")
     parser.add_argument("--username", help="full username with domain if AD")
-    parser.add_argument("--password", help="password")
+    # parser.add_argument("--password", help="password")
+    parser.add_argument("--api_key", help="api key of user")
     args = parser.parse_args()
     cr_url = str(args.cr_url)
     user = str(args.username)
-    password = str(args.password)
+    # password = str(args.password)
+    api_key = str(args.api_key)
     # Get token
-    token = f.get_token_password(cr_url, user, password)
+    token = f.get_token_apikey(cr_url, user, api_key)
     # Credential list
     credential_list_json = f.get_credential_list(cr_url, token)
     # Prepare dataframe

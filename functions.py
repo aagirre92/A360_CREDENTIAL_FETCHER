@@ -18,6 +18,23 @@ def get_token_password(cr_url, username, password):
     return r.json()['token']
 
 
+def get_token_apikey(cr_url, username, api_key):
+    endpoint = "/v1/authentication"
+    url = cr_url + endpoint
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+        "username": username,
+        "apiKey": api_key
+    }
+
+    r = requests.post(url=url, headers=headers, json=payload, verify=False)
+    r.raise_for_status()
+    return r.json()['token']
+
+
 def get_credential_list(cr_url, token):
     endpoint = "/v2/credentialvault/credentials/list"
     url = cr_url + endpoint
