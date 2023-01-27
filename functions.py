@@ -24,7 +24,6 @@ def get_token_apikey(cr_url, username, api_key):
     headers = {
         "Content-Type": "application/json"
     }
-
     payload = {
         "username": username,
         "apiKey": api_key

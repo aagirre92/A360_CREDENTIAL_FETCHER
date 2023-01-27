@@ -3,6 +3,7 @@ This script allows to programmatically fetch all credential-attributes from Cont
 **Your user must have permissions for fetching these**
 
 # USAGE (powershell)
+* Be careful when you insert the API KEY in powershell, use the appropriate **escape characters!**
 ```
 .\main.py --cr_url="https://aa1-app2019.iacc.epam.com" --username="andoni_aguirre_aranguren_creator" --api_key="123fsda"
 
