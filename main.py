@@ -25,7 +25,7 @@ if __name__ == '__main__':
     df = pd.DataFrame(
         {"Credential Name": [], "Credential Description": [], "Attribute Name": [], "Attribute Description": [],
          "Attribute Value": [],
-         "Masked": []})
+         "Masked Attribute": [], "Attribute Password Flag":[]})
     # Loop for fetching all credential-attributes
     for credential in credential_list_json:
         credential_name = credential["name"]  # dataframe
@@ -37,6 +37,7 @@ if __name__ == '__main__':
             attribute_name = attribute["name"]  # dataframe
             attribute_masked = attribute["masked"]  # dataframe
             attribute_description = attribute["description"]  # dataframe
+            attribute_password_flag = attribute["passwordFlag"] # dataframe
             # Get attribute value
             attribute_value = f.get_attribute_values(cr_url, token, credential_id, attribute_id)
             if attribute_value:
@@ -44,7 +45,7 @@ if __name__ == '__main__':
             else:
                 attribute_value = ""
 
-            row_to_append = [credential_name, credential_description, attribute_name,attribute_description, attribute_value, attribute_masked]
+            row_to_append = [credential_name, credential_description, attribute_name,attribute_description, attribute_value, attribute_masked, attribute_password_flag]
             df.loc[len(df)] = row_to_append
 
     # Print and save as csv within same folder
