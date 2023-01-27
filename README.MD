@@ -16,10 +16,8 @@ This script allows to programmatically fetch all credential-attributes from Cont
 
 Output **credentials.csv** file will be created under execution folder and will look like this:
 
-|Credential Name                    |Credential Description                                                                                     |Attribute Name  |Attribute Value                               |Masked|
-|-----------------------------------|-----------------------------------------------------------------------------------------------------------|----------------|----------------------------------------------|------|
-|Email_Credentials                  |Email credentials for xxxx                                                                                 |Username        |lololo@gmail.com                              |False |
-|Email_Credentials                  |Email credentials for xxxx                                                                                 |Password        |1234                                          |True  |
-|AA Gmail                           |gmail user                                                                                                 |email           |automation.anywhere@gmail.com                 |False |
-|AA Gmail                           |gmail user                                                                                                 |password        |1234                                          |False |
-
+|Credential Name                    |Credential Description                                                                                     |Attribute Name  |Attribute Description         |Attribute Value                               |Masked|
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------|----------------|------------------------------|----------------------------------------------|------|
+|Email_Credentials                  |email credentials                                                                                          |Username        |                              |johndoe@gmail.com                             |False |
+|Email_Credentials                  |email credentials                                                                                          |Password        |                              |123123                                        |True  |
+|test_credential_API                |CREDENTIAL DESCRIPTION OIOIOI                                                                              |username        |ATTRIBUTE DESCRIPTION UEUEUEUE|ASDFFDSAFSD@GMAIL.COM                         |False |
