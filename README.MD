@@ -1,6 +1,8 @@
 # INTRODUCTION
 This script allows to programmatically fetch all credential-attributes from Control Room, creating a output csv file
-**Your user must have permissions for fetching these**
+**Your user must have permissions for fetching these. Your user must have a role with the following permission:**
+
+* _View and edit ALL credentials attributes value_
 
 # USAGE (powershell)
 * Be careful when you insert the API KEY in powershell, use the appropriate **escape characters!**
