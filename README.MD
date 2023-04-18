@@ -27,3 +27,6 @@ Output **credentials.csv** file will be created under execution folder and will 
 |SAP                                |SAP2                          |                                                                                                           |password        |                              |True                   |                               |False           |False                  |
 |SAP                                |SAP2                          |                                                                                                           |username        |                              |True                   |                               |False           |False                  |
 |test_credential_API                |                              |CREDENTIAL DESCRIPTION OIOIOI                                                                              |username        |ATTRIBUTE DESCRIPTION UEUEUEUE|False                  | ASDFFDSAFSD@GMAIL.COM         |False           |False                  |
+
+# License
+This project is licensed under the GNU Public License
